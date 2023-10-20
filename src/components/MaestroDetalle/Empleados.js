@@ -13,6 +13,7 @@ export default class Empleados extends Component {
     }
 
     loadEmpleados = () => {
+        console.log("hola")
 
         var idDepto = this.props.iddepto;
         var request = "api/empleados/empleadosdepartamento/" + idDepto;
@@ -28,6 +29,18 @@ export default class Empleados extends Component {
 
     componentDidMount = () => {
         this.loadEmpleados();
+    }
+
+    componentDidUpdate = (oldProps) => {
+
+        //dentro del oldprops tenemos el anterior props antes del render
+        console.log("old props "+ oldProps.iddepto);
+        console.log("actual props "+ this.props.iddepto);
+
+        //solamente cargamos los datos si props ha cambiado
+        if ( oldProps.iddepto != this.props.iddepto){
+            this.loadEmpleados();
+        }
     }
 
   render() {

@@ -8,12 +8,13 @@ import reportWebVitals from './reportWebVitals';
 //import BuscadorCoches from './components/BuscadorCoches';
 //import DepartamentosEmpleados from './components/DepartamentosEmpleados';
 //import EmpleadosOficios from './components/EmpleadosOficios';
-import Departamentos from './components/MaestroDetalle/Departamentos';
+//import Departamentos from './components/MaestroDetalle/Departamentos';
+import TablaMultiplicar from './components/RutasParametros/TablaMultiplicar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Departamentos />
+    <TablaMultiplicar numero="9" />
   </React.StrictMode>
 );
 
