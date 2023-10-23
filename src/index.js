@@ -3,18 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
-//import ServicioCustomer from './components/ServicioCustomer';
-//import BuscadorCustomer from './components/BuscadorCustomer';
-//import BuscadorCoches from './components/BuscadorCoches';
-//import DepartamentosEmpleados from './components/DepartamentosEmpleados';
-//import EmpleadosOficios from './components/EmpleadosOficios';
-//import Departamentos from './components/MaestroDetalle/Departamentos';
-import TablaMultiplicar from './components/RutasParametros/TablaMultiplicar';
+import Router from './components/Router';
+//import MenuRutas from './components/RutasParametros/MenuRutas';
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import $ from "jquery";
+import Popper from 'popper.js';
+import "bootstrap/dist/js/bootstrap.bundle";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TablaMultiplicar numero="9" />
+    
+    <Router />
   </React.StrictMode>
 );
 
